@@ -10,7 +10,7 @@ from csv2sql.model.lens import Lens
 
 class LensController(object):
 
-    JSON_COLUMNS = {"per", "product_image", "demonstration_image"}
+    JSON_COLUMNS = {"pwr", "product_image", "demonstration_image"}
 
     def __init__(self, connection_string: str):
         self.engine = create_engine(connection_string)

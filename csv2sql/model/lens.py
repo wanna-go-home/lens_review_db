@@ -20,7 +20,7 @@ class Lens(Base):
     review_cnt = Column(Integer)
     bc = Column(Numeric)
     dia = Column(Numeric)
-    per = Column(JSON)
+    pwr = Column(JSON)
     url = Column(Text)
     product_image = Column(JSON)
     demonstration_image = Column(JSON)
