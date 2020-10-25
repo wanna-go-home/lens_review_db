@@ -137,8 +137,11 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
-# Pycharm IDE
-.DS_Store
-
 # VS code
 .idea/
+
+# config file contains passwd
+db_config.yaml
+
+# PyCharm artifacts
+.DS_Store
