@@ -1,13 +1,12 @@
 CREATE TABLE public.comment_template
 (
-    id serial NOT NULL,
     account_id text NOT NULL,
-    content text,
-    like_cnt integer DEFAULT 0,
-    created_at timestamp without time zone DEFAULT now(),
-    depth smallint,
-    bundle_id integer,
-    PRIMARY KEY (id)
+    post_id integer NOT NULL,
+    content text NOT NULL,
+    like_cnt integer NOT NULL,
+    created_at timestamp without time zone NOT NULL,
+    depth smallint NOT NULL,
+    bundle_id integer NOT NULL
 )
 WITH (
     OIDS = FALSE
